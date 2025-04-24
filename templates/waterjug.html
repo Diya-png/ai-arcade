@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Water Jug Problem</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jug.css') }}">
+</head>
+<body>
+    <h2>Water Jug Problem - Hill Climbing</h2>
+
+    <div class="input-panel">
+        <label>Jug A Capacity: <input type="number" id="jugA" value="4"></label>
+        <label>Jug B Capacity: <input type="number" id="jugB" value="3"></label>
+        <label>Goal Amount: <input type="number" id="goal" value="2"></label>
+        <button onclick="solve()">Solve</button>
+    </div>
+
+    <div class="jug-container">
+        <div class="jug" id="jug-a">
+            <div class="water" id="water-a"></div>
+            <p>Jug A</p>
+        </div>
+        <div class="jug" id="jug-b">
+            <div class="water" id="water-b"></div>
+            <p>Jug B</p>
+        </div>
+    </div>
+
+    <div id="steps"></div>
+
+    <script src="{{ url_for('static', filename='js/jug.js') }}"></script>
+</body>
+</html>

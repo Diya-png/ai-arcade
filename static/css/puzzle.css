@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #F8EDE3;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+html, body {
+    height: 100%;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #5b3a29;
+    font-size: 36px; /* Increased title font size */
+}
+
+
+h2 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #5b3a29;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    background-color: #DFD3C3;
+    border: 1px solid #D0B8A8;
+    line-height: 100px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    cursor: grab;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.tile:active {
+    cursor: grabbing;
+    transform: scale(0.97);
+    background-color: #D0B8A8;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.log {
+    margin-top: 30px;
+    max-height: 300px;
+    overflow-y: auto;
+    text-align: left;
+    background-color: #DFD3C3;
+    padding: 15px 30px;
+    border: 1px solid #D0B8A8;
+    border-radius: 8px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+/* Button styling */
+button {
+    background-color: #C5705D;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a95749;
+}

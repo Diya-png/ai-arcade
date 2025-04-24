@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Backpropagation Visualizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/backprop.css') }}">
+</head>
+<body>
+    <h1>Backpropagation Neural Network Visualizer</h1>
+
+    <div class="network-config">
+        <label for="inputNodes">Input Nodes:</label>
+        <input type="number" id="inputNodes" min="1" max="10" value="2">
+        <label for="hiddenNodes">Hidden Nodes:</label>
+        <input type="number" id="hiddenNodes" min="1" max="10" value="2">
+        <label for="outputNodes">Output Nodes:</label>
+        <input type="number" id="outputNodes" min="1" max="5" value="1">
+        <button onclick="initializeNetwork()">Initialize</button>
+    </div>
+
+    <canvas id="networkCanvas" width="800" height="500"></canvas>
+
+    <div class="training-controls">
+        <button onclick="trainNetwork()">Train</button>
+        <button onclick="resetNetwork()">Reset</button>
+    </div>
+
+    <div class="log-box" id="logBox"></div>
+
+    <script src="{{ url_for('static', filename='js/backprop.js') }}"></script>
+</body>
+</html>

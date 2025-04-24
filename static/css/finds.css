@@ -1,0 +1,160 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #F8EDE3; /* Light cream background from style.css */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #5b3a29; /* Dark brown from style.css */
+}
+
+/* Feature header input area */
+.feature-headers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.feature-headers input {
+    flex: 1 1 150px;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.feature-headers button {
+    padding: 8px 14px;
+    background-color: #C5705D; /* Red-cream color from style.css */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.feature-headers button:hover {
+    background-color: #a95749; /* Darker shade on hover */
+}
+
+textarea {
+    width: 100%;
+    font-family: monospace;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #F1E6E6; /* Light background for header */
+    font-weight: bold;
+}
+
+.feature-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.feature-inputs input {
+    flex: 1;
+    min-width: 120px;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.feature-inputs button {
+    padding: 8px 12px;
+    background-color: #C5705D; /* Red-cream color from style.css */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#training-table th, #training-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: #C5705D; /* Red-cream color from style.css */
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #a95749; /* Darker shade on hover */
+}
+
+.remove-btn {
+    background-color: #c0392b;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #96281b;
+}
+
+#output {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #5b3a29; /* Dark brown from style.css */
+}
+
+.label-input {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.label-input input {
+    flex: 1;
+    min-width: 150px;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}

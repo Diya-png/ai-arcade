@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A* 8-Puzzle Visualizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/puzzle.css') }}">
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="content">
+            <h1>A* 8-Puzzle</h1>
+
+            <div class="container">
+                <div>
+                    <h3>Start State</h3>
+                    <div id="start-board" class="board"></div>
+                </div>
+                <div>
+                    <h3>Goal State</h3>
+                    <div id="goal-board" class="board"></div>
+                </div>
+            </div>
+
+            <div>
+                <button onclick="shuffleBoard()">Shuffle</button>
+                <button onclick="solvePuzzle()">Solve</button>
+            </div>
+        </div>
+
+        <footer>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/puzzle.js') }}"></script>
+</body>
+</html>

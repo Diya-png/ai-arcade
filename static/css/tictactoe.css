@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #F5EBE0; /* light warm background */
+    color: #5C4033; /* deep brown text */
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #DDB892; /* warm beige */
+    border: 2px solid #7F4F24; /* brown border */
+    color: #3E1F0D; /* dark brown font */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #E6CCB2; /* lighter peach hover */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: #A47148; /* soft brown */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #855E42; /* darker brown hover */
+}
+
+#message {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #5C4033;
+}
+
+#scoreboard {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+#scoreboard p {
+    margin: 5px 0;
+    color: #3E1F0D;
+}

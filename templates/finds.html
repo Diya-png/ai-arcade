@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find-S Algorithm</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/finds.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Find-S Algorithm</h1>
+
+        <div id="input-section">
+            <div id="featureHeaders" class="feature-headers">
+                <input type="text" placeholder="Feature 1 Name" id="feature1-name" value="Feature 1">
+                <input type="text" placeholder="Feature 2 Name" id="feature2-name" value="Feature 2">
+                <input type="text" placeholder="Feature 3 Name" id="feature3-name" value="Feature 3">
+                <div class="label-input">
+                    <label for="labelName">Label Name:</label>
+                    <input type="text" id="labelName" placeholder="e.g. PlayTennis">
+                </div>
+                <button onclick="updateFeatureHeaders()">Set Feature Names</button>
+            </div>
+
+            <div class="feature-inputs">
+                <input type="text" placeholder="Feature 1">
+                <input type="text" placeholder="Feature 2">
+                <input type="text" placeholder="Feature 3">
+                <input type="text" placeholder="Label (Yes/No)" id="label-input">
+                <button onclick="addExample()">Add Example</button>
+            </div>
+            <table id="training-table">
+                <thead>
+                    <tr><th>Feature 1</th><th>Feature 2</th><th>Feature 3</th><th>Label</th><th>Remove</th></tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <button onclick="runFindS()">Run Find-S</button>
+        <div id="output"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/finds.js') }}"></script>
+</body>
+</html>

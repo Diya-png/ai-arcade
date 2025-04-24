@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F8EDE3; /* Light cream background */
+    color: #5b3a29;  /* Dark brown text for good contrast */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    margin-top: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #5b3a29; /* Dark brown */
+    margin-bottom: 10px;
+}
+
+.problem-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusts the grid layout for responsiveness */
+    gap: 30px; /* Increased gap between buttons */
+    justify-items: center; /* Ensures buttons are centered within each grid cell */
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.problem-links .link {
+    display: flex;
+    justify-content: center;  /* Center text horizontally */
+    align-items: center;      /* Center text vertically */
+    padding: 15px;
+    background-color: #C5705D;  /* Red-cream color */
+    color: white;
+    font-weight: 600;
+    font-size: 18px; /* Increased font size for better readability */
+    border-radius: 8px;  /* Rounded corners */
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    height: 120px;         /* Set fixed height for uniform size */
+    width: 100%;           /* Ensures it takes up the available width in the grid */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.problem-links .link:hover {
+    background-color: #a95749;  /* Darker shade on hover */
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #5b3a29;
+    margin-bottom: 20px;
+}
+
+/* Extra spacing for large screens */
+@media (min-width: 768px) {
+    .problem-links {
+        gap: 40px;
+    }
+
+    .problem-links .link {
+        padding: 18px 36px;
+        font-size: 20px; /* Larger font on larger screens */
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}
